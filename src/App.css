@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans Hebrew', serif;
+  direction: rtl;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  column-gap: 10px;
+  align-content: center;
+  align-items: center;
+}
+
+/** Card */
+
+.card {
+  width: 100%;
+  max-width: 314px;
+  min-width: 260px;
+  height: 390px;
+  box-shadow: 1px 1px 10px grey;
+}
+
+.img-area {
+  display: block;
+  width: 100%;
+  min-width: 260px;
+  height: 170px;
+  transition: 0.3s;
+}
+
+.img-area:hover {
+  transform: scale(1.1);
+}
+
+.text-area {
+  box-sizing: border-box;
+  height: 220px;
+  min-height: 160px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
+.category{
+  width: fit-content;
+  font-size: 12px;
+  padding: 0 7px;
+  color: white;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 3px 0;
+}
+
+.sub-title {
+  font-size: 12px;
+  margin: 3px 0;
+}
+
+.author {
+  font-size: 10px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/** Updating console */
+
+.updating-console {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 400px;
+  min-width: 170px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.dropdown-color-change {
+  width: 100%;
+  padding: 0 5px;
+}
+
+.input-name-change{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 5px;
+}
+
+
+@media screen and (max-width: 460px) {
+
+  .app {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}
